@@ -12,26 +12,19 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <!-- jquery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   
 </head>
 
 <body>
-    <!-- <h1 id="download" style="color: white;">download</h1> -->
-   
     <div class="wrapper">
         <aside id="sidebar" class="expand">
             <div class="d-flex">
-                <!-- <button class="toggle-btn" type="button"> -->
-                    <!-- <i class="lni lni-grid-alt"></i> -->
-                <!-- </button> -->
-
                 <div class="sidebar-logo">
                     <img src="asset/profile.png" class="sidebar-logo animate__animated animate__pulse animate__infinite	infinite">
-                    <!-- <a href="#"></a> -->
                 </div>
             </div>
             <div class="title-name text-center text-dark mt-4">
@@ -159,22 +152,23 @@
 
             <div class="sidebar-footer mt-5 mb-5 text-center">
                 <a href="#" class="sidebar-link">
-                    <button id="btn_toogle_new2" type="button" class="animate__animated animate__slideInRight animate__infinite	infinite">
-                        <!-- <img src="asset/swap.gif" width="40" height="40" alt=""> -->
-                        <i class="bi bi-arrow-left"></i>&nbsp; <span style="background: linear-gradient(to right, #A478E8, #516CF7);
-                        color: transparent;
-                        background-clip: text;"></span>
+                    <button id="btn_toogle_new2" type="button" >
+                        <i class="bi bi-x-lg"></i>
                     </button>
                 </a>
             </div>
         </aside>
-        <div class="main p-3" style=" ">
-            <button id="btn_toogle_new" type="button" class="animate__animated animate__slideInLeft animate__infinite	infinite">
+
+        <div class="main p-3">
+            <button id="btn_toogle_new" type="button" style="display: flex; align-items: center; justify-content: center;">
                 <!-- <img src="asset/swap.gif" width="40" height="40" alt=""> -->
-                <i class="bi bi-arrow-right"></i>&nbsp; <span style="background: linear-gradient(to right, #A478E8, #516CF7);
-                color: transparent;
-                background-clip: text;">My Profile</span>
+                <i class="bi bi-list"></i> &nbsp;&nbsp;
+                <span class="title-name" style="background: linear-gradient(to right, #A478E8, #516CF7); color: transparent; background-clip: text;">
+                    My Profile
+                </span>
             </button>
+            
+           
             <section class="bsb-timeline-1 py-5 py-xl-8">
                 <div class="container">
                   <div class="row">
@@ -538,6 +532,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <script>
+
+            let bsContainerWidth = $("body").width();
+                if (bsContainerWidth <= 768){
+                    $("#sidebar").removeClass("expand");
+                }
+             
+                // else if (bsContainerWidth <= 950)
+                //     console.log("small");
+                // else if (bsContainerWidth <= 1170)
+                //     console.log("medium");
+                // else
+                //     console.log("large");
+
+            $( "#btn_toogle_new" ).on( "click", function() {
+                $("#sidebar").addClass("expand");
+                $(".main").hide(); 
+            });
+
+            $( "#btn_toogle_new2" ).on( "click", function() {
+                $("#sidebar").removeClass("expand");
+                $(".main").show();
+            });
+            </script>
 </body>
 </html>
