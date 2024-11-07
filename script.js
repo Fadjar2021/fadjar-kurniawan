@@ -1,14 +1,4 @@
-const hamBurger = document.querySelector("#btn_toogle_new");
-const hamBurger2 = document.querySelector("#btn_toogle_new2");
 
-hamBurger.addEventListener("click", function () {
-  document.querySelector("#sidebar").classList.toggle("expand");
-  document.querySelector(".wrapper .main").style.display = "none";
-});
-hamBurger2.addEventListener("click", function () {
-  document.querySelector("#sidebar").classList.remove("expand");
-  document.querySelector(".wrapper .main").style.display = "block";
-});
 
 
 // Fungsi untuk memeriksa lebar layar dan menampilkan alert
@@ -21,6 +11,18 @@ function checkScreenWidth() {
   document.querySelector("#btn_toogle_new2").style.display = "none";
 }
 }
+
+const hamBurger = document.querySelector("#btn_toogle_new");
+const hamBurger2 = document.querySelector("#btn_toogle_new2");
+
+hamBurger.addEventListener("click", function () {
+  document.querySelector("#sidebar").classList.toggle("expand");
+  document.querySelector(".wrapper .main").style.display = "none";
+});
+hamBurger2.addEventListener("click", function () {
+  document.querySelector("#sidebar").classList.remove("expand");
+  document.querySelector(".wrapper .main").style.display = "block";
+});
 
 // Panggil fungsi saat halaman dimuat
 checkScreenWidth();
