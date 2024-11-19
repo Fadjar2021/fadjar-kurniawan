@@ -1,0 +1,116 @@
+{
+  "personal_information": {
+    "full_name": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "+1 234 567 890",
+    "address": "123 Main Street, Hometown, Country",
+    "linkedin": "https://www.linkedin.com/in/johndoe",
+    "website": "https://www.johndoeportfolio.com",
+    "date_of_birth": "1990-01-01",
+    "nationality": "Country"
+  },
+  "summary": {
+    "professional_summary": "Experienced software engineer with 5+ years in developing web and mobile applications. Passionate about building scalable systems and improving user experiences. Strong background in Python, JavaScript, and modern web technologies."
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Technology",
+      "graduation_year": 2012,
+      "location": "City, Country",
+      "gpa": "3.8"
+    },
+    {
+      "degree": "Master of Science in Software Engineering",
+      "institution": "Global University",
+      "graduation_year": 2014,
+      "location": "City, Country",
+      "gpa": "4.0"
+    }
+  ],
+  "work_experience": [
+    {
+      "job_title": "Senior Software Engineer",
+      "company": "Tech Solutions Inc.",
+      "location": "City, Country",
+      "start_date": "2019-03-01",
+      "end_date": "Present",
+      "responsibilities": [
+        "Lead a team of 5 engineers to develop a high-performance web application for e-commerce.",
+        "Collaborate with cross-functional teams to design and implement new features.",
+        "Mentor junior developers and conduct code reviews."
+      ]
+    },
+    {
+      "job_title": "Software Engineer",
+      "company": "Innovative Systems",
+      "location": "City, Country",
+      "start_date": "2014-06-01",
+      "end_date": "2019-02-28",
+      "responsibilities": [
+        "Developed RESTful APIs and integrated them with front-end applications.",
+        "Worked closely with product managers to define project requirements.",
+        "Implemented unit tests and automated testing to ensure code quality."
+      ]
+    }
+  ],
+  "skills": [
+    "Python",
+    "JavaScript (React, Node.js)",
+    "SQL, NoSQL databases (MySQL, MongoDB)",
+    "Docker, Kubernetes",
+    "Git, GitHub",
+    "Agile/Scrum methodologies",
+    "Problem-solving and debugging"
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Solutions Architect",
+      "issued_by": "Amazon Web Services (AWS)",
+      "issue_date": "2022-06-15",
+      "expiration_date": "2025-06-15"
+    },
+    {
+      "title": "Certified Kubernetes Administrator",
+      "issued_by": "The Linux Foundation",
+      "issue_date": "2021-12-10"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "proficiency": "Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-commerce Web App",
+      "description": "Developed a scalable e-commerce platform that supports high traffic and provides a seamless user experience. Implemented a secure payment gateway and integrated inventory management system.",
+      "technologies_used": ["React", "Node.js", "MongoDB", "Stripe API"]
+    },
+    {
+      "title": "Mobile Fitness App",
+      "description": "Created a mobile app that helps users track their workouts and nutrition. Integrated with wearable devices to monitor physical activity and health data in real-time.",
+      "technologies_used": ["React Native", "Firebase", "Google Fit API"]
+    }
+  ],
+  "interests": [
+    "Open-source contributions",
+    "Machine learning",
+    "Mountain biking",
+    "Traveling"
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "relationship": "Former Manager",
+      "company": "Tech Solutions Inc.",
+      "phone": "+1 234 567 891",
+      "email": "janesmith@example.com"
+    }
+  ]
+}
